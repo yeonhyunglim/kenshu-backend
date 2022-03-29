@@ -1,12 +1,15 @@
 version: '3'
 
+volumes:
+  db-store:
+
 services:
   #MySQL用コンテナ
   mysql:
     container_name: mysql
     image: mysql:5.7
     volumes:
-      - ./db:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d
     ports:
       - 3307:3306
     environment:
