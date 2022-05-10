@@ -1,5 +1,3 @@
-CREATE DATABASE article_service;
-
 USE article_service;
 
 CREATE TABLE editors (
