@@ -5,30 +5,49 @@
 
 
 <head>
-
-
     <meta charset="UTF-8">
-
-
-    <title>動作確認</title>
-
-
+    <title>投稿一覧</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-
 <body>
+    <div class="row justify-content-center">
+        <form class="was-validated" action="" method="POST">
+            <div class="form-group">
+                <label>タイトル</label>
+                <input type="text" name="title" class="form-control is-invalid" required>
+                <div class="invalid-feedback">タイトルを入力してください。</div>
+            </div>
+            <div class="form-group">
+                <label>本文</label>
+                <textarea name="body" class="form-control is-invalid" rows="3" required></textarea>
+                <div class="invalid-feedback">本文を入力してください。</div>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Choose image...</label>
+                <div class="invalid-feedback">イメージを選択してください。</div>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 
-
-    <h1><?php
-
-
-print ("DockerでPHP環境構築しました");
-
-
-?></h1>
-
-
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
 </body>
 
+</html>
+</body>
 
 </html>
