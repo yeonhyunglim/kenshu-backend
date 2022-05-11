@@ -45,3 +45,5 @@ CREATE TABLE article_tags (
     CONSTRAINT fk_articles_article_tags_id FOREIGN KEY (article_id) REFERENCES articles (id),
     CONSTRAINT fk_tags_article_tags_id FOREIGN KEY (tag_id) REFERENCES tags (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+INSERT INTO `editors` (`id`, `username`, `email`, `user_password`, `created_at`, `updated_at`) VALUES ('1', 'lehoangtu', 'lehoangtu@gmail.com', '123456', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
