@@ -13,8 +13,9 @@
 </head>
 
 <body>
+    <?php require_once './process.php'; ?>
     <div class="row justify-content-center">
-        <form class="was-validated" action="" method="POST">
+        <form class="was-validated" action="./process.php?'" method="POST">
             <div class="form-group">
                 <label>タイトル</label>
                 <input type="text" name="title" class="form-control is-invalid" required>
@@ -26,10 +27,11 @@
                 <div class="invalid-feedback">本文を入力してください。</div>
             </div>
             <div class="custom-file">
-                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                <label class="custom-file-label" for="validatedCustomFile">Choose image...</label>
-                <div class="invalid-feedback">イメージを選択してください。</div>
+                <input type="file" name="images[]" class="custom-file-input" accept="image/png, image/jpeg" mutiple>
+                <label class="custom-file-label">Choose image...</label>
             </div>
+            <!-- choose thumb_nail-->
+            <!-- choose tags  -->
             <br>
             <br>
             <div class="form-group">
