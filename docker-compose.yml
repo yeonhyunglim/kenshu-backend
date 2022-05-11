@@ -11,7 +11,7 @@ services:
     volumes:
       - ./db:/docker-entrypoint-initdb.d
     ports:
-      - 3307:3306
+      - 3306:3306
     environment:
       MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: m1ndfulness!
@@ -34,7 +34,7 @@ services:
     container_name: php-apache
     build: ./php
     volumes:
-      - ./html:/var/www/html
+      - ./src:/var/www/html
     ports:
       - 8080:80
     depends_on:
