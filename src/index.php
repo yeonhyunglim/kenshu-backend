@@ -33,8 +33,28 @@
                 <input type="file" name="images[]" class="custom-file-input" accept="image/png, image/jpeg" mutiple>
                 <label class="custom-file-label">Choose image...</label>
             </div>
+            <br>
+            <br>
             <!-- thumb_nail-->
             <!-- tags  -->
+            <div class="form-group">
+                <label>タグ</label>
+                <select class="custom-select form-control is-invalid" name="tags" mutiple required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">総合</option>
+                    <option value="2">テクノロジー</option>
+                    <option value="3">モバイル</option>
+                    <option value="4">アプリ</option>
+                    <option value="5">エンタメ</option>
+                    <option value="6">ビューティー</option>
+                    <option value="7">ファッション</option>
+                    <option value="8">ライフスタsイル</option>
+                    <option value="9">ビジネス</option>
+                    <option value="10">グルメ</option>
+                    <option value="11">スポーツ</option>
+                </select>
+                <div class="invalid-feedback">タグを1つ以上選択してください。</div>
+            </div>
             <br>
             <br>
             <div class="form-group">
