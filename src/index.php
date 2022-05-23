@@ -40,23 +40,30 @@
             <br>
             <br>
             <!-- thumb_nail-->
-            <!-- tags  -->
+
+            <!--  include(file);
+            $tags = getTags()
             <div class="form-group">
                 <label>タグ</label>
                 <select class="selectpicker form-control is-invalid" name="tags[]" multiple required>
-                    <option value="総合">総合</option>
-                    <option value="テクノロジー">テクノロジー</option>
-                    <option value="モバイル">モバイル</option>
-                    <option value="アプリ">アプリ</option>
-                    <option value="エンタメ">エンタメ</option>
-                    <option value="ビューティー">ビューティー</option>
-                    <option value="ファッション">ファッション</option>
-                    <option value="ビジネス">ビジネス</option>
-                    <option value="グルメ">グルメ</option>
-                    <option value="スポーツ">スポーツ</option>
+                    for(){
+                    echo <option value="総合">tags["name"]</option>
+                    echo <hidden tags["id"]>
+                        }
+                        <option value="総合">総合</option>
+                        <option value="テクノロジー">テクノロジー</option>
+                        <option value="モバイル">モバイル</option>
+                        <option value="アプリ">アプリ</option>
+                        <option value="エンタメ">エンタメ</option>
+                        <option value="ビューティー">ビューティー</option>
+                        <option value="ファッション">ファッション</option>
+                        <option value="ビジネス">ビジネス</option>
+                        <option value="グルメ">グルメ</option>
+                        <option value="スポーツ">スポーツ</option>
                 </select>
                 <div class="invalid-feedback">タグを1つ以上選択してください。</div>
             </div>
+             -->
             <br>
             <br>
             <div class="form-group">
