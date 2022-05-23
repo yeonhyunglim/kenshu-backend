@@ -43,18 +43,17 @@
             <!-- tags  -->
             <div class="form-group">
                 <label>タグ</label>
-                    <option value="1">総合</option>
-                    <option value="2">テクノロジー</option>
-                    <option value="3">モバイル</option>
-                    <option value="4">アプリ</option>
-                    <option value="5">エンタメ</option>
-                    <option value="6">ビューティー</option>
-                    <option value="7">ファッション</option>
-                    <option value="8">ライフスタsイル</option>
-                    <option value="9">ビジネス</option>
-                    <option value="10">グルメ</option>
-                    <option value="11">スポーツ</option>
                 <select class="selectpicker form-control" name="tags[]" multiple required>
+                    <option value="総合" selected="selected">総合</option>
+                    <option value="テクノロジー">テクノロジー</option>
+                    <option value="モバイル">モバイル</option>
+                    <option value="アプリ">アプリ</option>
+                    <option value="エンタメ">エンタメ</option>
+                    <option value="ビューティー">ビューティー</option>
+                    <option value="ファッション">ファッション</option>
+                    <option value="ビジネス">ビジネス</option>
+                    <option value="グルメ">グルメ</option>
+                    <option value="スポーツ">スポーツ</option>
                 </select>
                 <div class="invalid-feedback">タグを1つ以上選択してください。</div>
             </div>
